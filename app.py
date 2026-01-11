@@ -99,9 +99,9 @@ page = st.sidebar.radio("Select Module:", [
 
 st.sidebar.info("Developed for Decision Support Systems Course\n\n**Team:** Berkay, Aras, Güner")
 
-# ==============================================================================
+
 # PAGE 1: EXECUTIVE SUMMARY
-# ==============================================================================
+
 if page == "📊 Executive Summary":
     st.title("📊 Executive Performance Overview")
     st.markdown("Real-time insights into retail operations and customer demographics.")
@@ -151,9 +151,9 @@ if page == "📊 Executive Summary":
                                  color_discrete_sequence=px.colors.qualitative.Pastel)
                 st.plotly_chart(fig_pie, use_container_width=True)
 
-# ==============================================================================
+
 # PAGE 2: SALES FORECASTING (ARIMA)
-# ==============================================================================
+
 elif page == "🔮 Sales Forecasting (ARIMA)":
     st.title("📈 Future Sales Forecast")
     st.markdown("Predicting inventory demand using **ARIMA Time Series** modeling.")
@@ -178,9 +178,9 @@ elif page == "🔮 Sales Forecasting (ARIMA)":
     else:
         st.error("⚠️ ARIMA Model not found in `models/forecasting_model.pkl`.")
 
-# ==============================================================================
+
 # PAGE 3: CUSTOMER SEGMENTATION (RFM)
-# ==============================================================================
+
 elif page == "🎯 Customer Segmentation (RFM)":
     st.title("🎯 Customer Segmentation Analysis")
     st.markdown("Group customers into **VIP, Loyal, or Risk** segments using K-Means Clustering.")
@@ -211,9 +211,8 @@ elif page == "🎯 Customer Segmentation (RFM)":
     else:
         st.error("⚠️ Segmentation models (kmeans/scaler) missing.")
 
-# ==============================================================================
 # PAGE 4: PRODUCT RECOMMENDATION (UPDATED FEATURES)
-# ==============================================================================
+
 elif page == "🛍️ Product Recommendation (AI)":
     st.title("🤖 AI Product Recommendation")
     st.markdown("Predict the **Best Category** based on User Profile and Basket.")
@@ -266,9 +265,9 @@ elif page == "🛍️ Product Recommendation (AI)":
     else:
         st.error("⚠️ 'classification_model.pkl' not found.")
 
-# ==============================================================================
+
 # PAGE 5: NLP SENTIMENT ANALYSIS
-# ==============================================================================
+
 elif page == "💬 NLP Review Analysis":
     st.title("💬 Customer Voice Analytics")
     st.markdown("Analyze customer feedback instantly using **NLP**.")

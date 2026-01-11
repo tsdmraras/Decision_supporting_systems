@@ -1,7 +1,8 @@
 import pandas as pd
-import numpy as np  # Rastgele sayı üretmek için gerekli
+import numpy as np 
 from sklearn.preprocessing import LabelEncoder
 import os
+
 
 
 def load_and_clean_data():
