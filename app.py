@@ -32,7 +32,7 @@ def load_models():
         'sentiment': 'sentiment_model.pkl',
         'vectorizer': 'tfidf_vectorizer.pkl',
         'regression': 'regression_model.pkl',
-        'arima': 'arima_model.pkl'
+        'arima': 'forecasting_model.pkl'
     }
 
     for key, filename in file_map.items():
@@ -176,7 +176,7 @@ elif page == "🔮 Sales Forecasting (ARIMA)":
         st.plotly_chart(fig, use_container_width=True)
         st.success(f"💰 **Projected Revenue:** The AI predicts a strong trend for the next month.")
     else:
-        st.error("⚠️ ARIMA Model not found in `models/arima_model.pkl`.")
+        st.error("⚠️ ARIMA Model not found in `models/forecasting_model.pkl`.")
 
 # ==============================================================================
 # PAGE 3: CUSTOMER SEGMENTATION (RFM)
