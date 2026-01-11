@@ -8,3 +8,4 @@ streamlit
 textblob
 plotly
 openpyxl
+wordcloud
