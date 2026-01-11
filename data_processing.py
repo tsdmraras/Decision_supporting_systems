@@ -53,5 +53,3 @@ def load_and_clean_data():
 
 if __name__ == "__main__":
     load_and_clean_data()
-
-    print("merhabalar")
